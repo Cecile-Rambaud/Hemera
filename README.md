@@ -20,7 +20,7 @@ Hemera is an Android app that allows users to explore and discover celestial obj
 To get started with the Hemera project, simply clone the repository and import it into your favorite Android IDE (such as Android Studio).
 
 ```
-git clone https://github.com/your-username/hemera.git
+git clone https://github.com/astate85-dot/hemera.git
 Once the project is imported, you can run it on an Android emulator or a physical device.
 ```
 

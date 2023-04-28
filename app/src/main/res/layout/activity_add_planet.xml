@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlanetActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_bg_quatre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_image">
+
+
+        <LinearLayout
+            android:id="@+id/header_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/favicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/welcome_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:text="@string/d_couverte"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:theme="@style/TitleTextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+            <TextView
+                android:id="@+id/welcome_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/enregistrez_vos_derni_res_d_couvertes"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/SubtitleTextStyle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome_title" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_app">
+
+
+            <Button
+                android:id="@+id/select_image_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/s_lectionnez_votre_image"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:theme="@style/AddFormStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nom_de_l_objet"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/AddFormStyle"
+                android:layout_marginTop="@dimen/s"
+                app:layout_constraintTop_toBottomOf="@+id/select_image_button" />
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                style="@style/AddFormStyleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blur_background"
+                android:hint="@string/nom"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/textColor"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/distance_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distance_depuis_la_terre"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/AddFormStyle"
+                android:layout_marginTop="@dimen/s"
+                app:layout_constraintTop_toBottomOf="@+id/name_edit_text" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/distance_text">
+
+
+                <EditText
+                    android:id="@+id/distance_edit_text"
+                    style="@style/AddFormStyleLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/blur_background"
+                    android:hint="@string/distance"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp"
+                    android:textColorHint="@color/textColor" />
+
+                <Spinner
+                    android:id="@+id/order_of_magnitude_spinner"
+                    style="@style/AddFormStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/blur_background"
+                    android:padding="@dimen/xs"
+                    android:prompt="@string/order_of_magnitude_prompt"
+                    android:textColor="@color/white"
+                    android:theme="@style/AddFormStyle" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/type_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s_lectionnez_le_type_d_objet"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/AddFormStyle"
+                android:layout_marginTop="@dimen/s"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <Spinner
+                android:id="@+id/object_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blur_background"
+                android:padding="@dimen/xs"
+                android:prompt="@string/object_type_prompt"
+                android:textColor="@color/white"
+                android:theme="@style/AddFormStyleLabel"
+                app:layout_constraintTop_toBottomOf="@+id/type_text" />
+
+            <ImageView
+                android:id="@+id/planet_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/object_type_spinner" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description_de_l_objet"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/AddFormStyle"
+                android:layout_marginTop="@dimen/s"
+                app:layout_constraintTop_toBottomOf="@+id/object_type_spinner" />
+
+            <EditText
+                android:id="@+id/description_edit_text"
+                style="@style/AddFormStyleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/blur_background"
+                android:hint="@string/description"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/textColor"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_add_solid"
+                android:text="@string/ajouter_au_r_pertoire"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/s_font"
+                android:theme="@style/AddFormStyle"
+                android:layout_marginTop="@dimen/s"
+                app:layout_constraintTop_toBottomOf="@+id/description_edit_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

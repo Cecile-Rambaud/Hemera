@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Héméra</string>
+    <string name="name">Héméra</string>
+    <string name="description">Saisissez votre description…</string>
+    <string name="image">Héméra</string>
+    <string name="planet_name_hint">Name</string>
+    <string name="add_planet_button">Add Planet</string>
+    <string name="object_type_prompt">Choisissez un type d\'objet</string>
+    <string name="order_of_magnitude_prompt">Choisissez l\'ordre de grandeur</string>
+    <string name="distance">Distance</string>
+    <string name="nom">Nom</string>
+    <string name="nom_de_l_objet">Nom de l\'objet :</string>
+    <string name="s_lectionnez_votre_image">Sélectionnez votre image</string>
+    <string name="enregistrez_vos_derni_res_d_couvertes">Enregistrez vos dernières découvertes !</string>
+    <string name="d_couverte">Découverte</string>
+    <string name="s_lectionnez_le_type_d_objet">Sélectionnez le type d\'objet :</string>
+    <string name="description_de_l_objet">Description de l\'objet :</string>
+    <string name="ajouter_au_r_pertoire">Ajouter au répertoire</string>
+    <string name="distance_depuis_la_terre">Distance depuis la Terre :</string>
+    <string name="delete">Supprimer</string>
+    <string name="order_of_magnitude">Km</string>
+    <string name="slogan">Explorez et enregistrez vos découvertes !</string>
+</resources>

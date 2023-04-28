@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageUri"
+        android:background="@drawable/saturne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:id="@+id/background_view_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/object_type_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/s"
+            android:layout_marginBottom="@dimen/s"
+            android:text="@string/object_type_prompt"
+            android:textAlignment="center"
+            android:textSize="@dimen/m_font"
+            android:letterSpacing="1.5"
+            android:theme="@style/DetailTextStyle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nom_de_l_objet"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="@dimen/xxl_font"
+            android:theme="@style/TitleTextStyle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/s"
+                android:paddingRight="@dimen/xxs"
+                android:text="@string/distance_depuis_la_terre"
+                android:textAlignment="center"
+                android:textSize="@dimen/m_font"
+                android:theme="@style/SubtitleTextStyle"
+                app:layout_constraintBaseline_toBaselineOf="@+id/magnitude"
+                app:layout_constraintEnd_toStartOf="@+id/magnitude"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/magnitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/order_of_magnitude"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:theme="@style/SubtitleTextStyle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/distance" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description_de_l_objet"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/s"
+            android:layout_marginBottom="@dimen/s"
+            android:textSize="@dimen/s_font"
+            android:theme="@style/DefaultTextStyle"
+            android:justificationMode="inter_word"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/background_button_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/xl"
+        android:layout_marginRight="@dimen/xl"
+        android:layout_marginBottom="@dimen/s"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/btn_rounded_button">
+
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/delete"
+            android:background="#00AAAAAA"
+            android:theme="@style/DefaultTextStyle" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // Blur
+    <dimen name="blur_radius">1dp</dimen>
+    <dimen name="corner_radius">100dp</dimen>
+    // Padding et margin
+    <dimen name="xxs">5dp</dimen>
+    <dimen name="xs">10dp</dimen>
+    <dimen name="s">15dp</dimen>
+    <dimen name="m">20dp</dimen>
+    <dimen name="l">25dp</dimen>
+    <dimen name="xl">40dp</dimen>
+    <dimen name="xxl">80dp</dimen>
+    <dimen name="favicon">60dp</dimen>
+    // Font
+    <dimen name="xxs_font">10sp</dimen>
+    <dimen name="xs_font">12sp</dimen>
+    <dimen name="s_font">15sp</dimen>
+    <dimen name="m_font">20sp</dimen>
+    <dimen name="l_font">22sp</dimen>
+    <dimen name="xl_font">35sp</dimen>
+    <dimen name="xxl_font">60sp</dimen>
+    <dimen name="light_font">100</dimen>
+    <dimen name="regular_font">400</dimen>
+    <dimen name="strong_font">700</dimen>
+    <dimen name="black_font">900</dimen>
+    // Gradient
+    <dimen name="gradient_angle_max">-190</dimen>
+    <dimen name="gradient_angle_mid">-90</dimen>
+    <dimen name="gradient_angle_min">0</dimen>
+    // Corners
+    <dimen name="light_corner">0.5dp</dimen>
+    <dimen name="strong_corner">1dp</dimen>
+    // Radius
+    <dimen name="light_radius">50dp</dimen>
+    <dimen name="strong_radius">100dp</dimen>
+</resources>

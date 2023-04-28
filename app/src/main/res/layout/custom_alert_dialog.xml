@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/xl">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/CustomAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Êtes-vous sûr de vouloir supprimer cet élément ?"
+        android:theme="@style/CustomAlertDialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/m">
+
+        <Button
+            android:id="@+id/dialog_positive_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_positive_button"
+            android:text="Oui"
+            android:textColor="@color/darkIcon" />
+
+        <View
+            android:layout_width="@dimen/s"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/dialog_negative_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_negative_button"
+            android:text="Non"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</LinearLayout>

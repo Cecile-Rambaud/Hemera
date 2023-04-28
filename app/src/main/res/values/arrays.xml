@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_of_magnitude_options">
+        <item>Km</item>
+        <item>M Km</item>
+        <item>B Km</item>
+        <item>AL</item>
+    </string-array>
+    <string-array name="object_type_spinner">
+        <item>Étoile</item>
+        <item>Planète</item>
+        <item>Satellite</item>
+        <item>Galaxie</item>
+        <item>Autre</item>
+    </string-array>
+</resources>
+

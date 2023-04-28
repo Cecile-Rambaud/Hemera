@@ -24,7 +24,7 @@ The code for Hemera is organized into the following packages and classes:
 
 1. **MainActivity:** the main activity that displays the list of celestial objects, filter options, and the add button. It also handles the launching of other activities (AddPlanetActivity and DetailActivity) and communication between them.
 2. **DetailActivity:** Displays detailed information about a specific celestial object and allows for the removal of the object from the list.
-3. **AddPlanetActivit:**: Allows users to input information about a new celestial object and add it to the list.
+3. **AddPlanetActivit:** Allows users to input information about a new celestial object and add it to the list.
 4. **PlanetAdapter:** A custom RecyclerView adapter to display the celestial object list and handle filtering and object interactions.
 5. **Planet:** A model class representing a celestial object, containing information such as name, distance, type, description, and image URI.
 

@@ -11,6 +11,11 @@ Hemera is an Android app that allows users to explore and discover celestial obj
 5. Remove objects from the list
 6. Reset filters to view the full list of celestial objects again
 
+### Screenshot
+![MainActivity](https://github.com/astate85-dot/Hemera/blob/master/1682691625885%20-%20Copie.jpg)
+![DetailActivity](https://github.com/astate85-dot/Hemera/blob/master/1682691625883%20-%20Copie.jpg)
+![AddActivity](https://github.com/astate85-dot/Hemera/blob/master/1682691625881%20-%20Copie.jpg)
+
 ## Getting Started
 To get started with the Hemera project, simply clone the repository and import it into your favorite Android IDE (such as Android Studio).
 
